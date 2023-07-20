@@ -15,7 +15,7 @@ There are some devices (simulated) that send datas to SQS queues and a lambda fu
 
 ## How to run this project
 
-- clone this repo: <code>[https://](https://github.com/simoneauriemma/EcoSenseNet.git)</code>
+- clone this repo: <code>[repo link](https://github.com/simoneauriemma/EcoSenseNet.git)</code>
 - run <code>docker run -d --rm -p 4566:4566 --name aws localstack/localstack:1.4</code>
 - run <code>npm install</code>
 - go into <code>deploy</code> and re-run the command above
