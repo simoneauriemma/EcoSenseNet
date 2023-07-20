@@ -11,6 +11,8 @@ There are some devices (simulated) that send datas to SQS queues and a lambda fu
 ## Prerequisite
 - docker
 - Node.js
+- Aws cli
+- Python 3 with pip
 - A telegram bot token: Start Bot father and copy your Telegram Bot API key. After copying your Telegram Bot token, start the bot and then open a browser and go to https://api.telegram.org/bot<\API-access-token>/getUpdates?offset=0, send a message to the bot and then refresh the page. In the response, copy the numerical string "id" in "chat" object
 
 ## How to run this project
