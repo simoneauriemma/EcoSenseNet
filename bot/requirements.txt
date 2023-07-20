@@ -1,0 +1,4 @@
+boto3==1.23.0
+botocore==1.26.0
+pyTelegramBotAPI==4.12.0
+python-dotenv==1.0.0
