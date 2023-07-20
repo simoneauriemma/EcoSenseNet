@@ -1,0 +1,35 @@
+{
+  "name": "progettoserverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p tsconfig.json",
+    "start": "node ./dist/index.js && node ./dist/setup.js",
+    "setup": "node ./dist/settings/populateDB.js && node ./dist/device.js",
+    "average": "node ./dist/functions/average.js",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "dev:setup": "nodemon --exec ts-node src/setup.ts",
+    "dev:populate": "nodemon --exec ts-node src/settings/populateDB.ts",
+    "dev:device": "nodemon --exec ts-node src/device.ts",
+    "dev:average": "nodemon --exec ts-node src/functions/average.ts",
+    "dev:bot": "nodemon ./bot/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.115",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.335.0",
+    "@aws-sdk/client-sqs": "^3.335.0",
+    "dotenv": "^16.0.3",
+    "dynamodb-admin": "^4.5.0",
+    "nodemon": "^2.0.22",
+    "telegraf": "^4.12.2",
+    "ts-node": "^10.9.1"
+  }
+}
