@@ -54,4 +54,4 @@ And then create the functions:
 
 - in the bot directory, run pip install -r requirements.txt
 - start the bot by typing: <code>python bot/bot.py</code>
-- you will find all the commands once you do <code> /start <code> in the bot :)
+- you will find all the commands once you do <code>/start</code> in the bot :)
